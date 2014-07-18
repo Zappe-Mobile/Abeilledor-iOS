@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Cart" representedClassName="Cart" syncable="YES">
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productQuantity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productReviews" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" isAbstract="YES" syncable="YES">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="destinationAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="money" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="isCart" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isWishlist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productReviews" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProductDetail" representedClassName="ProductDetail" syncable="YES">
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productReviews" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Reminders" representedClassName="Reminders" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reminderTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WhereToBuy" representedClassName="WhereToBuy" syncable="YES">
+        <attribute name="storeAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storeName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Wishlist" representedClassName="Wishlist" syncable="YES">
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productReviews" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Yakult" representedClassName="Yakult" syncable="YES">
+        <attribute name="isWishlist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productReviews" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cart" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="Message" positionX="0" positionY="72" width="128" height="88"/>
+        <element name="Order" positionX="0" positionY="72" width="128" height="105"/>
+        <element name="Product" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="ProductDetail" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="Reminders" positionX="0" positionY="72" width="128" height="105"/>
+        <element name="WhereToBuy" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="Wishlist" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="Yakult" positionX="0" positionY="0" width="128" height="165"/>
+    </elements>
+</model>
